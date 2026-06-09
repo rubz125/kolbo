@@ -65,8 +65,8 @@ const services = [
 ];
 
 const stats = [
-  { value: "500+", label: "מוצרים במלאי" },
-  { value: "15+", label: "שנות ניסיון" },
+  { value: "5000+", label: "מוצרים במלאי" },
+  { value: "30+", label: "שנות ניסיון" },
   { value: "1000+", label: "לקוחות מרוצים" },
   { value: "6", label: "קטגוריות מוצרים" },
 ];
