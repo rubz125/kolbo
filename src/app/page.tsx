@@ -76,39 +76,40 @@ export default function HomePage() {
     <>
       {/* Hero Banner */}
       <section className="pt-16 lg:pt-20 bg-white">
-        <div className="w-full">
-          <div className="relative w-full">
-            <Image
-              src="/hero-banner.png"
-              alt="כלבו לקבלן - בונה? משפץ? אל תבזבז זמן יקר! 053-5239103"
-              width={1440}
-              height={600}
-              className="w-full h-auto object-cover"
-              priority
-            />
-            {/* CTA overlay buttons */}
-            <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-3 z-10">
-              <a
-                href="tel:0535239103"
-                className="bg-[#f97316] hover:bg-[#ea6c0a] text-white px-5 py-2.5 rounded-xl font-bold text-sm sm:text-base shadow-xl transition-all hover:scale-105 whitespace-nowrap"
-              >
-                📞 התקשרו עכשיו
-              </a>
-              <a
-                href="https://wa.me/972535239103"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-[#25D366] hover:bg-[#1ebe5d] text-white px-5 py-2.5 rounded-xl font-bold text-sm sm:text-base shadow-xl transition-all hover:scale-105 whitespace-nowrap"
-              >
-                WhatsApp
-              </a>
-              <Link
-                href="/catalog"
-                className="bg-[#1a2744] hover:bg-[#0f1a33] text-white px-5 py-2.5 rounded-xl font-bold text-sm sm:text-base shadow-xl transition-all hover:scale-105 whitespace-nowrap"
-              >
-                קטלוג מוצרים
-              </Link>
-            </div>
+        <Image
+          src="/hero-banner.png"
+          alt="כלבו לקבלן - בונה? משפץ? אל תבזבז זמן יקר! 053-5239103"
+          width={1440}
+          height={600}
+          className="w-full h-auto"
+          priority
+        />
+        {/* CTA buttons below banner */}
+        <div className="bg-[#1a2744] py-4 px-4">
+          <div className="max-w-2xl mx-auto flex flex-wrap justify-center gap-3">
+            <a
+              href="tel:0535239103"
+              className="bg-[#f97316] hover:bg-[#ea6c0a] text-white px-6 py-3 rounded-xl font-bold text-sm sm:text-base shadow-lg transition-all hover:scale-105 whitespace-nowrap flex items-center gap-2"
+            >
+              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+              </svg>
+              התקשרו עכשיו
+            </a>
+            <a
+              href="https://wa.me/972535239103"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#25D366] hover:bg-[#1ebe5d] text-white px-6 py-3 rounded-xl font-bold text-sm sm:text-base shadow-lg transition-all hover:scale-105 whitespace-nowrap"
+            >
+              WhatsApp
+            </a>
+            <Link
+              href="/catalog"
+              className="bg-white hover:bg-gray-100 text-[#1a2744] px-6 py-3 rounded-xl font-bold text-sm sm:text-base shadow-lg transition-all hover:scale-105 whitespace-nowrap"
+            >
+              קטלוג מוצרים
+            </Link>
           </div>
         </div>
       </section>
