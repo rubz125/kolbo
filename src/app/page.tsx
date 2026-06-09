@@ -84,6 +84,22 @@ export default function HomePage() {
           className="w-full h-auto"
           priority
         />
+        {/* Brand trust bar */}
+        <div className="bg-white border-b border-gray-100 py-3 overflow-hidden">
+          <div className="animate-marquee">
+            {[...Array(2)].map((_, i) => (
+              <div key={i} className="flex items-center gap-10 px-6">
+                {["HAMAT", "HUNTER", "SIGMA", "טמבור", "נירלט", "חרסה"].map((brand) => (
+                  <span key={brand} className="text-gray-500 font-black text-base sm:text-lg tracking-wide uppercase whitespace-nowrap hover:text-[#f97316] transition-colors cursor-default">
+                    {brand}
+                  </span>
+                ))}
+                <span className="text-[#f97316] text-xl">◆</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
         {/* CTA buttons below banner */}
         <div className="bg-[#1a2744] py-4 px-4">
           <div className="max-w-2xl mx-auto flex flex-wrap justify-center gap-3">
