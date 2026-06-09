@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 const navLinks = [
@@ -32,8 +33,8 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 lg:w-12 lg:h-12 bg-[#f97316] rounded-xl flex items-center justify-center font-black text-white text-lg lg:text-xl shadow-lg group-hover:scale-105 transition-transform">
-              כ
+            <div className="w-10 h-10 lg:w-12 lg:h-12 rounded-xl overflow-hidden shadow-lg group-hover:scale-105 transition-transform shrink-0">
+              <Image src="/logo.png" alt="כלבו לקבלן" width={48} height={48} className="w-full h-full object-cover" />
             </div>
             <div className="text-white">
               <div className="font-black text-base lg:text-lg leading-tight">כלבו לקבלן</div>

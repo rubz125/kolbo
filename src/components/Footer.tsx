@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -8,8 +9,8 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-12 h-12 bg-[#f97316] rounded-xl flex items-center justify-center font-black text-white text-xl shadow-lg">
-                כ
+              <div className="w-12 h-12 rounded-xl overflow-hidden shadow-lg shrink-0">
+                <Image src="/logo.png" alt="כלבו לקבלן" width={48} height={48} className="w-full h-full object-cover" />
               </div>
               <div>
                 <div className="font-black text-xl">כלבו לקבלן</div>
